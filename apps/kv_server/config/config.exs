@@ -2,12 +2,12 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :timber,
-  api_key: "",
-  source_id: ""
-
-config :logger,
-  backends: [:console, Timber.LoggerBackends.HTTP]
+# config :timber,
+#  api_key: "",
+#  source_id: ""
+#
+# config :logger,
+#  backends: [:console, Timber.LoggerBackends.HTTP]
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
