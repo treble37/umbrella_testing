@@ -1,6 +1,6 @@
 use Mix.Config
 
-config :timber, :api_key, ""
+config :timber, :api_key, System.get_env("TIMBER_API_KEY") || raise("error with timber api key")
 
 # Update the instrumenters so that we can structure Phoenix logs
 config :api, ApiWeb.Endpoint, instrumenters: [Timber.Phoenix]
