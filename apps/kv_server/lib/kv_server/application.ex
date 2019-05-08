@@ -16,7 +16,7 @@ defmodule KVServer.Application do
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: KVServer.Supervisor]
-    Logger.warn("HELLO")
+    Logger.warn("HELLO from umbrella_testing: KVServer app")
     Supervisor.start_link(children, opts)
   end
 end
