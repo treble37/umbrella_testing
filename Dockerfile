@@ -1,4 +1,4 @@
-FROM gcr.io/versus-infra-dev/releaser
+FROM gcr.io/versus-infra-dev/releaser:elixir1.8
 
 WORKDIR /opt/umbrella_testing
 
