@@ -15,7 +15,7 @@ defmodule ApiWeb.Router do
   end
 
   scope "/", ApiWeb do
-    pipe_through(:browser)
+    pipe_through(:api)
 
     get("/", PageController, :index)
   end

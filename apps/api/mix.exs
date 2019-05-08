@@ -42,7 +42,13 @@ defmodule Api.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:timber, "~> 3.1.1"},
+      {:timber_plug, "~> 1.0"},
+      {:timber_phoenix, "~> 1.0"},
+      {:timber_ecto, "~> 2.1.0"},
+      {:timber_exceptions, "~> 2.1.0"},
+      {:kv_server, in_umbrella: true}
     ]
   end
 end

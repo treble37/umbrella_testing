@@ -2,6 +2,6 @@ defmodule ApiWeb.PageController do
   use ApiWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    json(conn, %{"page_controller" => "ApiWeb.PageController#index/1"})
   end
 end
