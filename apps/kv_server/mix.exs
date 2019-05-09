@@ -26,7 +26,7 @@ defmodule KVServer.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:timber, "~> 3.1"},
+      {:timber, "3.1.1"},
       {:hackney, "~> 1.9.0"},
       {:statix, "~> 1.1"}
       # {:dep_from_hexpm, "~> 0.3.0"},
