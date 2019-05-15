@@ -26,7 +26,10 @@ defmodule KVServer.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:timber, "3.1.1"},
+      {:timber,
+       git: "https://github.com/treble37/timber-elixir.git",
+       branch: "handle-hackney-exit",
+       override: true},
       {:hackney, "~> 1.15.1"},
       {:statix, "~> 1.1"}
       # {:dep_from_hexpm, "~> 0.3.0"},
