@@ -44,14 +44,16 @@ defmodule Api.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:timber,
-       git: "https://github.com/treble37/timber-elixir.git",
-       branch: "handle-hackney-exit",
-       override: true},
+       git: "https://github.com/treble37/timber-elixir.git", branch: "handle-hackney-exit"},
       {:timber_plug,
        git: "https://github.com/treble37/timber-elixir-plug.git", branch: "handle-hackney-exit"},
-      {:timber_phoenix, "~> 1.0"},
-      {:timber_ecto, "~> 2.1.0"},
-      {:timber_exceptions, "~> 2.1.0"},
+      {:timber_phoenix,
+       git: "https://github.com/treble37/timber-elixir-phoenix.git", branch: "handle-hackney-exit"},
+      {:timber_ecto,
+       git: "https://github.com/treble37/timber-elixir-ecto.git", branch: "handle-hackney-exit"},
+      {:timber_exceptions,
+       git: "https://github.com/treble37/timber-elixir-exceptions.git",
+       branch: "handle-hackney-exit"},
       {:kv_server, in_umbrella: true}
     ]
   end
