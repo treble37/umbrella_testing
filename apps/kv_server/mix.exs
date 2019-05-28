@@ -27,9 +27,8 @@ defmodule KVServer.MixProject do
   defp deps do
     [
       {:timber,
-       git: "https://github.com/treble37/timber-elixir.git",
-       branch: "handle-hackney-exit",
-       override: true},
+       git: "https://github.com/timberio/timber-elixir",
+       ref: "ca9831b05b9c80d7c02a42c3dc8e63164cbba2f5"},
       {:hackney, "~> 1.15.1"},
       {:statix, "~> 1.1"}
       # {:dep_from_hexpm, "~> 0.3.0"},
