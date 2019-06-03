@@ -2,6 +2,10 @@
 
 A test application to test distributed Elixir
 
+### Deploy Notes
+
+-   infrastructure_example directory provides terraform and Docker files to show how to deploy; just substitute the appropriate values
+
 #### Build a release locally
 
 -   Use first 2 commands below when troubleshooting; the last 2 commands
