@@ -14,6 +14,8 @@ config :api, ApiWeb.Endpoint,
   render_errors: [view: ApiWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Api.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :libcluster, topologies: []
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

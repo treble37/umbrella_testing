@@ -9,6 +9,8 @@ defmodule Api.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
+      {Cluster.Supervisor,
+       [Application.get_env(:libcluster, :topologies), [name: Api.ClusterSupervisor]]},
       ApiWeb.Endpoint
       # Starts a worker by calling: Api.Worker.start_link(arg)
       # {Api.Worker, arg},
