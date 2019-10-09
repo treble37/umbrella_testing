@@ -16,3 +16,5 @@ config :data, DataWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config :data, :mnesia, storage_type: :ram_copies

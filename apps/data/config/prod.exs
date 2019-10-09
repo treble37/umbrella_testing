@@ -16,6 +16,7 @@ config :data, DataWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
+config :data, :mnesia, storage_type: :disc_copies
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
